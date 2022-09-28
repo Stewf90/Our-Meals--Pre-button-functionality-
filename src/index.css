@@ -1,0 +1,282 @@
+:root {
+  --header-text: rgb(245, 245, 245);
+  --meals: #6754d6;
+  --background: #6495ED;
+  --buttons: #61DAFB;
+  --header: #f50c3b;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial, Helvetica, sans-serif';
+}
+
+body {
+  background-color: var(--background);
+}
+
+.App {
+  color: var(--header-text);
+  text-align: center;
+}
+
+span {
+  font-size: larger;
+}
+
+p{
+  font-size: larger;
+}
+
+h1 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3 {
+  margin-bottom: 0.3rem;
+  font-size:x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.mealName {
+  color:rgb(253, 228, 0);
+  font-size:xx-large;
+  font-weight: 800;
+  font-variant: small-caps;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.meals {
+  display: grid;
+  position: flex;
+  max-width: 1324px;
+  margin: 2rem auto 0;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  height: 700px;
+  overflow: auto;
+}
+
+.meal {
+  background-color: var(--meals);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: left;
+  
+}
+
+
+nav {
+  position: relative;
+  background-color: var(--header)
+}
+
+button.add {
+  appearance: none;
+  background: none;
+  border: solid;
+  border-color: red;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  right: 60px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: var(--buttons);
+}
+
+button.show {
+  position: relative;
+  appearance: none;
+  background: none;
+  border: solid;
+  border-color: red;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  left: 80px;
+  font-weight: bold;
+  text-transform: uppercase;
+  overflow: auto;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: var(--buttons);
+}
+
+button.send {
+  position: relative;
+  appearance: none;
+  background: none;
+  border: solid;
+  border-color: rgb(109, 97, 219);
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  ;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: var(--buttons);
+}
+button.list {
+  position: relative;
+  appearance: none;
+  background: none;
+  border: solid;
+  border-color: rgb(109, 97, 219);
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  ;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin:auto;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: var(--buttons);
+}
+
+button.remove {
+  position: relative;
+  align-content: center;
+ 
+  border: solid;
+  border-color: rgb(109, 97, 219);
+  outline: none;
+  cursor: pointer;
+  
+  font-weight: bold;
+  text-transform: uppercase;
+  
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: var(--buttons);
+}
+
+
+
+button.addIngredient {
+  color: var(--header-text);
+  background-color: purple;
+  text-transform: uppercase;
+}
+
+
+ol, ul {
+  list-style: none;
+  font-size: larger;
+}
+
+li {
+  line-height: 1.4;
+}
+
+
+.addPop {
+  float: left;
+  background-color: var(--meals);
+  padding: 1rem;
+  margin: 1rem auto 0;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 280px;
+  overflow: auto;
+  max-height: calc(100vh - 4rem);
+  
+}
+
+.showPop {
+  float: right;
+  background-color: var(--meals);
+  margin: 1rem auto 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 280px;
+  max-height: calc(100vh - 4rem);
+  height: 715px;
+  overflow: auto;
+  
+}
+
+.recipeLink {
+  color: rgb(4, 196, 20);
+
+}
+/* 
+.popup h2 {
+  margin-bottom: 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} */
+
+img {
+  width: 300px;
+  height: 300px;
+}
+
+.form {
+  margin-bottom: 1rem;
+}
+
+/* .form:last-of-type {
+  margin-bottom: 2;
+
+} */
+
+input, textarea {
+  display: block;
+  width: 100%;
+  padding: 0.4rem;
+  resize: vertical;
+  max-height: 100px; 
+}
+
+
+
+.form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.formTitle {
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(216, 198, 190);
+  font-size: larger;
+}
+
+.form button {
+  position: relative;
+  appearance: none;
+  background: none;
+  border: solid;
+  border-color: rgb(109, 97, 219);
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  ;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: var(--buttons);
+}
+
+
+
+
+
+
